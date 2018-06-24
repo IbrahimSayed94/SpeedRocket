@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical"
+    tools:showIn="@layout/payment_screen_app_bar"
+    android:theme="@style/AppThemeLogin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ibrahim.speedrocket.View.Activites.PaymentScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#E53935"
+            android:text="Total :"
+            android:layout_marginRight="5dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#E53935"
+            android:text="180 EGP"
+            android:id="@+id/pricePayment"
+            android:layout_marginRight="5dp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        android:gravity="center"
+        android:background="#263238"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How would you like to pay ?"
+            android:textColor="#FFF"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            >
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/rGPaymentMethods"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFF"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/gotham"
+                    android:buttonTint="#dcd9ee"
+                    android:id="@+id/rbMasterCard"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFF"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/gotham"
+                    android:buttonTint="#dcd9ee"
+                    android:id="@+id/rbPaypal"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFF"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/gotham"
+                    android:buttonTint="#dcd9ee"
+                    android:id="@+id/rbAmericanExpress"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFF"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/gotham"
+                    android:buttonTint="#dcd9ee"
+                    android:id="@+id/rbVisa"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFF"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/gotham"
+                    android:buttonTint="#dcd9ee"
+                    android:id="@+id/rbCash"
+                    android:visibility="gone"
+                    />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Master Card"
+                    android:gravity="center_vertical"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:src="@drawable/mastercard"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Paypal Payment"
+                    android:gravity="center_vertical"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:src="@drawable/paypalbutton"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="American Express Payment"
+                    android:gravity="center_vertical"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:src="@drawable/americancardbutton"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="VISA Payment"
+                    android:gravity="center_vertical"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:src="@drawable/visacardbutton"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+                android:id="@+id/layoutCash"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Cash On Delivery"
+                    android:gravity="center_vertical"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:src="@drawable/cashondelivery"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shipping Info"
+            android:textColor="#000"
+            />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:drawablePadding="20dp"
+            android:textColor="#000"
+            android:textCursorDrawable="@null"
+            android:hint="@string/name"
+            android:textColorHint="#90A4AE"
+            android:backgroundTint="#000"
+            android:scrollHorizontally="true"
+            android:maxLines="1"
+            android:inputType="text"
+            android:id="@+id/shipping_name"
+            />
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:drawablePadding="20dp"
+            android:textColor="#000"
+            android:textCursorDrawable="@null"
+            android:hint="@string/mobile"
+            android:textColorHint="#90A4AE"
+            android:backgroundTint="#000"
+            android:scrollHorizontally="true"
+            android:maxLines="1"
+            android:inputType="number"
+            android:id="@+id/shipping_mobile"
+            />
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:drawablePadding="20dp"
+            android:textColor="#000"
+            android:textCursorDrawable="@null"
+            android:hint="@string/address"
+            android:textColorHint="#90A4AE"
+            android:backgroundTint="#000"
+            android:scrollHorizontally="true"
+            android:maxLines="1"
+            android:inputType="text"
+            android:id="@+id/shiping_address"
+            />
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="@string/placeOrder"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/paymentOrder"
+            android:onClick="paymentPlaceOrder"
+            android:background="@drawable/login_button_effect"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

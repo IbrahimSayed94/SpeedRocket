@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:orientation="vertical"
+    tools:context="com.example.ibrahim.speedrocket.View.Activites.MyCashScreen">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/chooseYourBankAccount"
+        android:textColor="#FFF"
+        android:textSize="25dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#625d7e"
+        />
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/recycleViewBankAccounts"
+           />
+
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_credit_card_black_24dp"
+        android:drawablePadding="20dp"
+        android:textColor="#000"
+        android:textCursorDrawable="@null"
+        android:hint="@string/amount"
+        android:inputType="number"
+        android:textColorHint="#90A4AE"
+        android:backgroundTint="#000"
+        android:scrollHorizontally="true"
+        android:maxLines="1"
+        android:id="@+id/txt_amountOfCash"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/moredetails_effect"
+            android:text="@string/cancel"
+            android:onClick="cancelMyCompanyList"
+            android:textColor="#FFF" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/moredetails_effect"
+            android:text="@string/send"
+            android:onClick="sendRequestForCash"
+            android:textColor="#FFF" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

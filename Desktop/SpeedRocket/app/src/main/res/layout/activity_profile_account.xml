@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/AppThemeLogin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/personalprofile_app_bar_navigation_menu"
+    tools:context="com.example.ibrahim.speedrocket.View.Activites.ProfileAccount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/companubackgroundtop"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="#FFF"
+                    app:civ_border_color="#000000"
+                    app:civ_border_width="2dp"
+                    android:id="@+id/profile_image_account"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/qedit"
+                    android:layout_marginLeft="40dp"
+                    android:onClick="edit_image"
+                    android:id="@+id/edit_image"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layoutDirection="ltr"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amr"
+                    android:textColor="#FFF"
+                    android:textSize="17dp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMaxTextSize="15sp"
+                    android:autoSizeMinTextSize="5sp"
+                    android:autoSizeStepGranularity="2sp"
+                    android:ellipsize="none"
+                    android:singleLine="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/pro_firstname"
+                    android:fontFamily="@font/gotham"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Muhammed"
+                    android:textColor="#FFF"
+                    android:textSize="17dp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMaxTextSize="15sp"
+                    android:autoSizeMinTextSize="5sp"
+                    android:autoSizeStepGranularity="2sp"
+                    android:ellipsize="none"
+                    android:singleLine="true"
+                    android:id="@+id/pro_lastname"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/gotham"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMaxTextSize="15sp"
+                    android:autoSizeMinTextSize="5sp"
+                    android:autoSizeStepGranularity="2sp"
+                    android:ellipsize="none"
+                    android:singleLine="true"
+                    android:id="@+id/pro_type"
+                    android:clickable="true"
+                    android:textColor="@drawable/forgetpass_effect" />
+                />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#000000"
+                android:elevation="6dp"
+                app:tabTextColor="#b6b2d1"
+                app:tabSelectedTextColor="@color/company3"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="@style/AppThemeLogin"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/companubackgroundbottom"
+                >
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/tab_layout"
+                    android:background="@color/company2"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

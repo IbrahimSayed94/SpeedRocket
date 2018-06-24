@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "38208052890",
+    "firebase_url": "https://speedrocket-68484.firebaseio.com",
+    "project_id": "speedrocket-68484",
+    "storage_bucket": "speedrocket-68484.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38208052890:android:de3593b5c77f394b",
+        "android_client_info": {
+          "package_name": "com.example.ibrahim.speedrocket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "38208052890-3adspg4md92ta7gib35ukl42b0dkfd79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4Zdx_lcsFNeE5ho8CW9SEAhZ1DFAyUCI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

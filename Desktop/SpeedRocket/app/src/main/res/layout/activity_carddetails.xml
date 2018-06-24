@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carddetailsbackground"
+    tools:context="com.example.ibrahim.speedrocket.View.Activites.carddetails"
+    android:theme="@style/AppThemeLogin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/carddetails_app_bar_navigationmenu"
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="50dp"
+       android:layout_marginBottom="50dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:paddingTop="10dp"
+       android:paddingBottom="10dp"
+       android:paddingRight="10dp"
+       android:paddingLeft="10dp"
+       android:background="#99111724"
+       android:orientation="vertical"
+       >
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="center"
+           >
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Pay Rs. 25 to Mobikwik"
+               android:textColor="#FFF"
+               />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="bottom"
+           android:layout_marginBottom="10dp"
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/weAccept"
+               android:textColor="#FFF"
+               />
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           >
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:background="@drawable/visacardbutton"
+               android:layout_marginRight="5dp"
+               android:layout_marginLeft="5dp"
+               />
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:background="@drawable/mastercardbutton"
+               android:layout_marginRight="5dp"
+               android:layout_marginLeft="5dp"
+               />
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:background="@drawable/paypalbutton"
+               android:layout_marginRight="5dp"
+               android:layout_marginLeft="5dp"
+               />
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:background="@drawable/americancardbutton"
+               android:layout_marginRight="5dp"
+               android:layout_marginLeft="5dp"
+               />
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="bottom"
+           android:layout_marginBottom="10dp"
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/cardNumber"
+               android:textColor="#FFF"
+               />
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="0.95"
+           >
+           <android.support.v7.widget.AppCompatEditText
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:drawablePadding="20dp"
+               android:textColor="#FFF"
+               android:textCursorDrawable="@null"
+               android:hint="0000 0000 0000 0000"
+               android:inputType="number"
+               android:textColorHint="#90A4AE"
+               android:backgroundTint="#FFF"
+               android:scrollHorizontally="true"
+               android:maxLines="1"
+               android:id="@+id/ed_cardNumber"
+               />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="bottom"
+           android:layout_marginBottom="10dp"
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/expirationDate"
+               android:textColor="#FFF"
+               />
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           >
+           <android.support.v7.widget.AppCompatSpinner
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:spinnerMode="dropdown"
+               android:paddingBottom="10dp"
+               android:paddingTop="10dp"
+               android:layout_weight="1"
+               android:id="@+id/spinnerMonths"
+               android:backgroundTint="@color/company3"
+               >
+
+           </android.support.v7.widget.AppCompatSpinner>
+
+           <android.support.v7.widget.AppCompatSpinner
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:spinnerMode="dropdown"
+               android:paddingBottom="10dp"
+               android:paddingTop="10dp"
+               android:layout_weight="1"
+               android:id="@+id/spinnerYears"
+               android:backgroundTint="@color/company3"
+               >
+
+           </android.support.v7.widget.AppCompatSpinner>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="bottom"
+           android:layout_marginBottom="10dp"
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/cvvCode"
+               android:textColor="#FFF"
+               />
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="0.95"
+           >
+           <android.support.v7.widget.AppCompatEditText
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:drawablePadding="20dp"
+               android:textColor="#FFF"
+               android:textCursorDrawable="@null"
+               android:hint="000"
+               android:id="@+id/ed_cvvCode"
+               android:inputType="number"
+               android:textColorHint="#90A4AE"
+               android:backgroundTint="#FFF"
+               android:scrollHorizontally="true"
+               android:maxLines="1"
+               />
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginBottom="5dp"
+           android:layout_marginTop="5dp"
+           >
+
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="@string/pay"
+               android:onClick="payCardDetails"
+               android:textColor="#FFF"
+               android:fontFamily="@font/gotham"
+               android:background="@drawable/moredetails_effect"
+               />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           >
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+
+</LinearLayout>

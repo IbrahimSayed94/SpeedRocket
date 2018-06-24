@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:showIn="@layout/add_offer_app_bar"
+    android:id="@+id/layoutAddOffer"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ibrahim.speedrocket.View.Activites.AddOffer">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:id="@+id/interestCompany_layout"
+            android:orientation="horizontal"
+            >
+
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/vcategory"
+                android:drawablePadding="20dp"
+                android:textColor="#FFF"
+                android:textCursorDrawable="@null"
+                android:hint="@string/chooseProduct"
+                android:id="@+id/oProduct"
+                android:inputType="number"
+                android:textColorHint="#90A4AE"
+                android:backgroundTint="#FFF"
+                android:scrollHorizontally="true"
+                android:maxLines="1"
+                android:clickable="true"
+                />
+
+
+            <!--   <android.support.v7.widget.AppCompatSpinner
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:spinnerMode="dropdown"
+                   android:paddingBottom="10dp"
+                   android:paddingTop="10dp"
+                   android:id="@+id/oProduct"
+                   android:backgroundTint="@color/company3"
+                   >
+
+               </android.support.v7.widget.AppCompatSpinner>-->
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/vdate"
+                android:drawablePadding="20dp"
+                android:textColor="#FFF"
+                android:textCursorDrawable="@null"
+                android:hint="@string/startTime"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:inputType="text"
+                android:textColorHint="#90A4AE"
+                android:backgroundTint="#FFF"
+                android:scrollHorizontally="true"
+                android:maxLines="1"
+                android:id="@+id/oStartTime"
+                />
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/vdate"
+                android:drawablePadding="20dp"
+                android:textColor="#FFF"
+                android:textCursorDrawable="@null"
+                android:hint="@string/endTime"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:inputType="text"
+                android:textColorHint="#90A4AE"
+                android:backgroundTint="#FFF"
+                android:scrollHorizontally="true"
+                android:maxLines="1"
+                android:id="@+id/oEndTime"
+                />
+        </LinearLayout>
+
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/vdiscount"
+                android:drawablePadding="20dp"
+                android:textColor="#FFF"
+                android:textCursorDrawable="@null"
+                android:hint="@string/discount"
+                android:id="@+id/oDiscount"
+                android:inputType="number"
+                android:textColorHint="#90A4AE"
+                android:backgroundTint="#FFF"
+                android:scrollHorizontally="true"
+                android:maxLines="1"
+                />
+
+
+        </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/vimage"
+                android:drawablePadding="20dp"
+                android:textColor="#FFF"
+                android:textCursorDrawable="@null"
+                android:hint="@string/offerImage"
+                android:textColorHint="#90A4AE"
+                android:inputType="number"
+                android:backgroundTint="#FFF"
+                android:id="@+id/oOfferImage"
+                android:scrollHorizontally="true"
+                android:maxLines="1"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_margin="10dp"
+                android:text="@string/upload"
+                android:textColor="#FFF"
+                android:fontFamily="@font/gotham"
+                android:onClick="uploadOfferImageButton"
+                android:background="@drawable/moredetails_effect"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham"
+                android:text="@string/choosePackage"
+                android:textColor="#FFF"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5%"
+                    android:textColor="#d67915" />
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:max="95"
+                    android:progress="40"
+                    android:progressBackgroundTint="#FFF"
+                    android:progressTint="#d67915"
+                    android:thumbTint="#FFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100%"
+                    android:textColor="#d67915" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product discount between: "
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/gotham"
+                    android:textColor="#FFF"
+                    android:textSize="15dp"
+                    />
+                <TextView
+                    android:id="@+id/textViewRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:fontFamily="@font/gotham"
+                    android:textColor="#d67915"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/gotham"
+                    android:textColor="#FFF"
+                    android:textSize="15dp"
+                    android:text=" % to "
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:fontFamily="@font/gotham"
+                    android:textSize="15dp"
+                    android:textColor="#d67915"
+                    android:id="@+id/textViewRate1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/gotham"
+                    android:text=" %"
+                    android:textColor="#FFF"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/gotham"
+                    android:textColor="#FFF"
+                    android:textSize="15dp"
+                    android:text="Cost : "
+                    />
+                <TextView
+                    android:id="@+id/textViewCost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/gotham"
+                    android:textColor="#d67915"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/gotham"
+                    android:textColor="#FFF"
+                    android:textSize="15dp"
+                    android:text="EGP per day"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/gotham"
+                    android:textColor="#FFF"
+                    android:textSize="15dp"
+                    android:text="Total Cost : "
+                    />
+                <TextView
+                    android:id="@+id/textViewTotalCost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/gotham"
+                    android:textColor="#d67915"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/gotham"
+                    android:textColor="#FFF"
+                    android:textSize="15dp"
+                    android:text="EGP"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+            <!--  <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/rGPackage"
+                >
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="100 EGP for 10 % Ads"
+                    android:textColor="#FFF"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/gotham"
+                    android:buttonTint="#d67915"
+                    android:id="@+id/firstPackage"
+                    />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="200 EGP for 25 % Ads"
+                    android:textColor="#FFF"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/gotham"
+                    android:buttonTint="#d67915"
+                    android:id="@+id/secondPackage"
+                    />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="300 EGP for 45 % Ads"
+                    android:textColor="#FFF"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/gotham"
+                    android:buttonTint="#d67915"
+                    android:id="@+id/thirdPackage"
+                    />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="400 EGP for 55 % Ads"
+                    android:textColor="#FFF"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/gotham"
+                    android:buttonTint="#d67915"
+                    android:id="@+id/fourthPackage"
+                    />
+
+
+
+            </RadioGroup>-->
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+         android:gravity="center"
+           >
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:text="@string/advertice"
+                android:textColor="#FFF"
+                android:id="@+id/oOffer"
+                android:fontFamily="@font/gotham"
+                android:background="@drawable/moredetails_effect"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

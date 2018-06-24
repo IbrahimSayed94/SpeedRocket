@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1e2639"
+    android:orientation="vertical"
+    tools:context="com.example.ibrahim.speedrocket.View.Activites.DialogMoreDetails">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/description"
+        android:textColor="#FFF"
+        android:textSize="25dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#E65100"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:text="Featuring an Intel® Core™ i7 Processor and Windows 10 Home OS 15
+15.5 LED Display (1920x1080 dots) and a 256GB (SDD) Storage"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/offerdetails_description"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_gravity="center"
+        android:id="@+id/bt_cancel_dialog_moredetails"
+        android:onClick="CancelDialogueMoreDetails"
+        android:text="@string/cancel"
+        android:background="@drawable/moredetails_effect"
+        />
+
+</LinearLayout>

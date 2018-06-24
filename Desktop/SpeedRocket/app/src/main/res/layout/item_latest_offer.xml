@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#1A237E"
+    android:layout_marginBottom="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_height="25dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="LapTop Samasung Note Book"
+        android:textSize="8dp"
+        android:gravity="center_vertical"
+        android:textColor="#FFF"
+        android:fontFamily="@font/gotham"
+        android:id="@+id/latest_offer_name"
+        />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="left"
+        >
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/red_shape"
+            android:id="@+id/latest_offer_image"
+            android:layout_gravity="center_vertical"
+            />
+
+    </LinearLayout>
+</LinearLayout>

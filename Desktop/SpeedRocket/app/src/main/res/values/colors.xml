@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00BCD4</color>
+    <color name="colorPrimaryDark">#00ACC1</color>
+    <color name="colorAccent">#78909C</color>
+
+
+
+    <color name="company1">#af072459</color>
+    <color name="company2">#af081e36</color>
+    <color name="company3">#d67915</color>
+    <color name="company4">#ffc356</color>
+    <color name="company5">#070a12</color>
+
+
+</resources>

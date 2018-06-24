@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/groubId"
+        android:visible="true"
+        >
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/vhomepage"
+            android:title="@string/home"
+            />
+
+
+        <item
+            android:id="@+id/nav_offers"
+            android:icon="@drawable/vdiscount"
+            android:title="@string/offers" />
+        <item
+
+            android:id="@+id/nav_category"
+            android:icon="@drawable/v1products"
+            android:title="@string/products" />
+
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_cPanal"
+                android:icon="@drawable/vmypanal"
+                android:title="@string/myPanal"
+                android:visible="false"
+                />
+            <item
+                android:id="@+id/nav_myProducts"
+                android:icon="@drawable/v1myproducts"
+                android:title="@string/myProducts"
+                android:visible="false"
+                />
+            <item
+                android:id="@+id/nav_buycoins"
+                android:icon="@drawable/v1buycoin"
+                android:title="@string/buyCoins" />
+            <item
+                android:id="@+id/nav_country"
+                android:icon="@drawable/vcountry"
+                android:title="@string/country" />
+            <item
+                android:id="@+id/nav_language"
+                android:icon="@drawable/v1language"
+                android:title="@string/Language" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/v1login"
+                android:title="@string/logOut" />
+
+
+
+
+
+            <group android:checkableBehavior="single"
+                android:id="@+id/group1"
+                android:visible="true"
+                />
+        </menu>
+    </item>
+
+</menu>

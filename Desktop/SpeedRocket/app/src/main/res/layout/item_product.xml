@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    >
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginBottom="10dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Progmine"
+                            android:textColor="#FFAB91"
+                            android:id="@+id/companNameProduct"
+                            android:textStyle="bold"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:visibility="invisible"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2000"
+                            android:id="@+id/priceProduct"
+                            android:layout_marginBottom="5dp"
+                            android:visibility="invisible"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="eg"
+                            android:textColor="#000"
+                            android:id="@+id/egWord"
+                            android:layout_marginBottom="5dp"
+                            android:visibility="invisible"
+                            />
+
+
+                        <LinearLayout
+                            android:id="@+id/counterDaysLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:visibility="invisible">
+
+                            <TextView
+                                android:id="@+id/restDays"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:textColor="#228b22"
+                                android:text="7" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textColor="#228b22"
+                                android:text="days"
+                                android:id="@+id/wordDays"/>
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laptop Dell core I7"
+                        android:textColor="#000"
+                        android:id="@+id/productname"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/productDescription"
+                        android:maxLines="2"
+                        android:text="Featuring an Intel® Core™ i7 Processor and Windows 10 Home OS 15"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="3"
+                    android:gravity="top"
+                    android:layout_gravity="top"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/product"
+                        android:id="@+id/productimage"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="top"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/moredetails_effect"
+                    android:text="@string/buy"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/productstart"
+                    android:elevation="10dp"
+                    android:textColor="#FFF"
+                    android:layout_margin="5dp"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:elevation="50dp"
+                    android:background="@drawable/moreinfoeffect"
+                    android:text="@string/MoreInfo"
+                    android:textColor="#d67915"
+                    android:layout_marginLeft="5dp"
+                    android:layout_margin="5dp"
+                    android:id="@+id/productInfo"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Your Product In Delivery"
+                    android:textColor="#228b22"
+                    android:visibility="gone"
+                    android:id="@+id/alreadyBuyed"
+                    />
+
+
+
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:id="@+id/srCoinOfProductLayout"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    >
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="120"
+                      android:id="@+id/srCoinOfProduct"
+                      android:layout_marginRight="5dp"
+                      />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/sale"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#072459"
+            android:orientation="vertical"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            >
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_alignParentLeft="true"
+                      android:text="Samsung Note"
+                      android:layout_weight="0.5"
+                      android:textColor="#FFF"
+                      android:id="@+id/productname"
+                      />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:text="15 Days"
+                android:textColor="#B71C1C"
+                android:layout_weight="1"
+                />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/product"
+                android:id="@+id/productimage"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/sale"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="30"
+                android:textSize="10dp"
+                android:textColor="#FFF"
+                android:layout_marginLeft="2dp"
+                android:id="@+id/productpoints"
+                android:fontFamily="@font/gotham"
+                android:gravity="center_vertical"
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:gravity="right"
+                >
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:id="@+id/ac"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_local_grocery_store_black_24dp"
+                    />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="8dp"
+                    android:background="@drawable/moredetails_effect"
+                    android:id="@+id/productstart"
+                    android:elevation="50dp"
+                    android:text="Buy"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="8dp"
+                    android:textColor="#FFF"
+                    android:fontFamily="@font/gotham"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>-->

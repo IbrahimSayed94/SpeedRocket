@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ibrahim.speedrocket.View.Activites.AddBankAccount"
+    tools:showIn="@layout/add_bank_account_app_bar">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/txt_bankAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFF"
+                android:drawableStart="@drawable/vhomepage"
+                android:drawablePadding="20dp"
+                android:hint="@string/accountNumber"
+                android:inputType="number"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:textColor="#FFF"
+                android:textColorHint="#90A4AE"
+                android:textCursorDrawable="@null"
+                tools:ignore="RtlCompat" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/txt_bankName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFF"
+                android:drawableStart="@drawable/vcompany"
+                android:drawablePadding="20dp"
+                android:hint="@string/bankName"
+                android:inputType="text"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:textColor="#FFF"
+                android:textColorHint="#90A4AE"
+                android:textCursorDrawable="@null" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/txt_swift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFF"
+                android:drawableStart="@drawable/vproductname"
+                android:drawablePadding="20dp"
+                android:hint="@string/swiftCode"
+                android:inputType="number"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:textColor="#FFF"
+                android:textColorHint="#90A4AE"
+                android:textCursorDrawable="@null" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/txt_bankAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFF"
+                android:drawableStart="@drawable/vcity"
+                android:drawablePadding="20dp"
+                android:hint="@string/branchAddress"
+                android:inputType="text"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:textColor="#FFF"
+                android:textColorHint="#90A4AE"
+                android:textCursorDrawable="@null" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:background="@drawable/moredetails_effect"
+                android:fontFamily="@font/gotham"
+                android:onClick="AddBank"
+                android:text="@string/addBank"
+                android:textColor="#FFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="horizontal"></LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

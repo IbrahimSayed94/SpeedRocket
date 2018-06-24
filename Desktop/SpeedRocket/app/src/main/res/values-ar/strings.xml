@@ -1,0 +1,152 @@
+
+<resources>
+    <string name="app_name">Speedrocket</string>
+    <string name="accountNumber" translatable="false">رقم الحساب</string>
+    <string name="bankName" translatable="false">اسم البنك</string>
+    <string name="swiftCode" translatable="false">كود السويفت</string>
+    <string name="branchAddress" translatable="false">عنوان الفرع</string>
+
+    <string name="addBank" translatable="false">اضف بنك</string>
+    <string name="email" translatable="false">البريد الإلكترونى</string>
+    <string name="fax" translatable="false">فاكس</string>
+    <string name="mobileNumber" translatable="false">رقم الموبايل</string>
+    <string name="companyLogo" translatable="false">لوجو الشركة</string>
+    <string name="startTime" translatable="false">تاريخ البداية</string>
+    <string name="endTime" translatable="false">تاريخ النهاية</string>
+    <string name="discount" translatable="false">الخصم</string>
+    <string name="addCompany" translatable="false">اضف شركة</string>
+    <string name="upload" translatable="false">تحميل</string>
+    <string name="offerImage" translatable="false">صورة العرض</string>
+    <string name="choosePackage" translatable="false">اختار الباقة</string>
+    <string name="advertice" translatable="false">اعلن</string>
+    <string name="productImage" translatable="false">صورة المنتج</string>
+    <string name="addProduct" translatable="false">اضف منتج</string>
+    <string name="buyQuanteties" translatable="false">شراء الكميات</string>
+    <string name="remaining" translatable="false">المتبقى</string>
+    <string name="yourCredit" translatable="false">رصيدك</string>
+    <string name="coins" translatable="false">العملات</string>
+    <string name="coin" translatable="false">العمله</string>
+    <string name="amount" translatable="false">الكميه</string>
+    <string name="egp" translatable="false">ج.م</string>
+    <string name="otherAmount" translatable="false">الكميات الأخرى</string>
+    <string name="price" translatable="false">السعر</string>
+    <string name="weAccept" translatable="false">نحن نقبل</string>
+    <string name="cardNumber" translatable="false">رقم الكارت</string>
+    <string name="expirationDate" translatable="false">تاريخ انتهاء الصلاحيه</string>
+    <string name="cvvCode" translatable="false">رقم ال cvv</string>
+    <string name="pay" translatable="false">ادفع</string>
+    <string name="address" translatable="false">العنوان</string>
+    <string name="sendMessage" translatable="false">ارسال</string>
+    <string name="description" translatable="false">الوصف</string>
+    <string name="cancel" translatable="false">الغاء</string>
+    <string name="password" translatable="false">كلمة المرور</string>
+    <string name="forgetPassword" translatable="false">هل نسيت كلمة المرور</string>
+    <string name="signWith" translatable="false">تسجيل الدخول ب</string>
+    <string name="createNewAccount" translatable="false">انشاء حساب جديد</string>
+    <string name="registertion" translatable="false">انشاء حساب</string>
+    <string name="login" translatable="false">تسجيل الدخول</string>
+    <string name="cashReport" translatable="false">تقرير النقدية</string>
+    <string name="totalCash" translatable="false">اجمالى النقدية</string>
+    <string name="pendingCash" translatable="false">فى انتظار النقدية</string>
+    <string name="netCash" translatable="false">صافى النقد</string>
+    <string name="requestCash" translatable="false">طلب نقدا</string>
+    <string name="addBankAccount" translatable="false">اضف حساب بنكى</string>
+    <string name="profile" translatable="false">الحساب</string>
+    <string name="company" translatable="false">الشركة</string>
+    <string name="product" translatable="false">المنتج</string>
+    <string name="advertisment" translatable="false">الاعلان</string>
+    <string name="myCash" translatable="false">النقدية</string>
+    <string name="contactUs" translatable="false">اتصل بنا</string>
+    <string name="addOffer" translatable="false">اضف عرض</string>
+    <string name="shippingInfo" translatable="false">معلومات الشحن</string>
+    <string name="name" translatable="false">الاسم</string>
+    <string name="mobile" translatable="false">الموبايل</string>
+    <string name="placeOrder" translatable="false">اطلب</string>
+    <string name="presenter" translatable="false">المقدم</string>
+    <string name="moreDetails" translatable="false">تفاصيل اكثر</string>
+    <string name="hours" translatable="false">س</string>
+    <string name="minutes" translatable="false">د</string>
+    <string name="seconds" translatable="false">ث</string>
+    <string name="user" translatable="false">المشرف</string>
+    <string name="firstName" translatable="false">الاسم الاول</string>
+    <string name="lastName" translatable="false">الاسم الاخير</string>
+    <string name="confirm" translatable="false">تأكيد</string>
+    <string name="male" translatable="false">ذكر</string>
+    <string name="female" translatable="false">انثى</string>
+    <string name="chooseYourInterest" translatable="false">اختار الاهتمامات المفضلة</string>
+    <string name="register" translatable="false">تسجيل</string>
+    <string name="update" translatable="false">تعديل</string>
+    <string name="congratulations" translatable="false">تهانينا</string>
+    <string name="YouHaveWonTheOffer" translatable="false">انت حصلت على العرض</string>
+    <string name="continu" translatable="false">استمر</string>
+    <string name="remember" translatable="false">تذكر</string>
+    <string name="rememberContain" translatable="false">سيصلك هذا المنتج فى خلال 10 أيام\n
+لتأكيد الشراء اضغط استمر</string>
+    <string name="warningMessage" translatable="false">رسالة تحذير</string>
+    <string name="warningContain" translatable="false">هل انت متأكد من حذف هذا البند ؟</string>
+    <string name="yes" translatable="false">نعم</string>
+    <string name="no" translatable="false">لا</string>
+    <string name="moreInfo" translatable="false">معلومات اكثر</string>
+    <string name="buyNow" translatable="false">اشترى الان</string>
+    <string name="chooseYourBankAccount" translatable="false">اختار حسابك البنكى</string>
+    <string name="send" translatable="false">ارسال</string>
+    <string name="message" translatable="false">الرسالة</string>
+    <string name="chooseYourCompany" translatable="false">اختار شركتك</string>
+    <string name="offer" translatable="false">العرض</string>
+    <string name="basicInfo" translatable="false">معلومات</string>
+    <string name="livesIn" translatable="false">الدولة</string>
+    <string name="homeTown" translatable="false">المدينة</string>
+    <string name="gender" translatable="false">النوع</string>
+    <string name="language" translatable="false">اللغه</string>
+    <string name="interested" translatable="false">الاهتمامات</string>
+    <string name="changePassword" translatable="false">تغير كلمة السر</string>
+    <string name="joinDate" translatable="false">تاريخ الانضمام</string>
+    <string name="location" translatable="false">الموقع</string>
+    <string name="category" translatable="false">القسم</string>
+    <string name="Email" translatable="false">البريد الالكترونى</string>
+    <string name="Phone" translatable="false">التليفون</string>
+    <string name="Fax" translatable="false">الفاكس</string>
+    <string name="Address" translatable="false">العنوان</string>
+    <string name="goodLuck" translatable="false">حظ سعيد</string>
+    <string name="sorryOfferEnded" translatable="false">اسف العرض انتهى</string>
+    <string name="haveWonTheOffer" translatable="false">فزت بالعرض</string>
+    <string name="tryAnotherOffer" translatable="false">حاول فى عرض اخر</string>
+    <string name="paymentMessage" translatable="false">رسالة الدفع</string>
+    <string name="paymentMessageContain" translatable="false">اسف , انت لا تملك عملات كافية للإستمرار .</string>
+    <string name="recharge" translatable="false">اعد الشحن</string>
+    <string name="offering" translatable="false">يعرض</string>
+    <string name="sendOffer" translatable="false">ارسال عرض</string>
+    <string name="start" translatable="false">ابدأ</string>
+    <string name="MoreInfo" translatable="false">معلومات اكثر</string>
+    <string name="buy" translatable="false">اشترى</string>
+    <string name="offersYou" translatable="false">يعرض عليك</string>
+    <string name="accept" translatable="false">يقبل</string>
+    <string name="amountOfCoins" translatable="false">كمية العملات : </string>
+    <string name="welcome" translatable="false">مرحبا , </string>
+    <string name="inSpeedRocket" translatable="false">فى سبيد روكيت</string>
+
+    <string name="home" translatable="false">الصفحة الرئيسية</string>
+    <string name="offers" translatable="false">العروض</string>
+    <string name="products" translatable="false">المنتجات</string>
+    <string name="myPanal" translatable="false">لوحة التحكم</string>
+    <string name="myProducts" translatable="false">منتجاتى</string>
+    <string name="buyCoins" translatable="false">اشترى عملات</string>
+    <string name="country" translatable="false">الدولة</string>
+    <string name="Language" translatable="false">اللغة</string>
+    <string name="logOut" translatable="false">تسجيل الخروج</string>
+    <string name="offerDetails" translatable="false">تفاصيل العرض</string>
+    <string name="profileAccount" translatable="false">الحساب الشخصي</string>
+    <string name="cardDetails" translatable="false">تفاصيل الكارت</string>
+    <string name="payment" translatable="false">الحساب</string>
+    <string name="companies" translatable="false">الشركات</string>
+    <string name="verification" translatable="false">التحقق</string>
+    <string name="Offer" translatable="false">اعرض</string>
+
+    <string name="day" translatable="false">اليوم</string>
+    <string name="month" translatable="false">الشهر</string>
+    <string name="all" translatable="false">الإجمالى</string>
+
+
+    <string name="chooseProduct" translatable="false">اختار المنتج</string>
+    <string name="ok" translatable="false">تم</string>
+</resources>

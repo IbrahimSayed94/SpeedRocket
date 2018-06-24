@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/imageitem_app_bar_navigation_menu"
+    tools:context="com.example.ibrahim.speedrocket.View.Activites.image_item"
+    android:orientation="horizontal">
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/sliderFullScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:focusableInTouchMode="true"
+        />
+</LinearLayout>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:showIn="@layout/add_product_app_bar"
+    android:id="@+id/layoutAddProduct"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ibrahim.speedrocket.View.Activites.AddProduct">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/vproductname"
+                    android:drawablePadding="20dp"
+                    android:textColor="#FFF"
+                    android:textCursorDrawable="@null"
+                    android:hint="English Name"
+                    android:textColorHint="#90A4AE"
+                    android:backgroundTint="#FFF"
+                    android:scrollHorizontally="true"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:id="@+id/pEnName"
+                    />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="20dp"
+                    android:textColor="#FFF"
+                    android:textCursorDrawable="@null"
+                    android:hint="الإسم"
+                    android:textColorHint="#90A4AE"
+                    android:backgroundTint="#FFF"
+                    android:textDirection="rtl"
+                    android:layout_gravity="start"
+                    android:textAlignment="viewStart"
+                    android:scrollHorizontally="true"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:id="@+id/pArName"
+                    android:drawableStart="@drawable/vproductname"
+                    />
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/vdescription"
+                    android:drawablePadding="20dp"
+                    android:textColor="#FFF"
+                    android:textCursorDrawable="@null"
+                    android:hint="description"
+                    android:inputType="text"
+                    android:textColorHint="#90A4AE"
+                    android:backgroundTint="#FFF"
+                    android:scrollHorizontally="true"
+                    android:maxLines="1"
+                    android:id="@+id/pEndescription"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/vdescription"
+                    android:drawablePadding="20dp"
+                    android:textColor="#FFF"
+                    android:textCursorDrawable="@null"
+                    android:hint="الوصف"
+                    android:inputType="text"
+                    android:textColorHint="#90A4AE"
+                    android:backgroundTint="#FFF"
+                    android:scrollHorizontally="true"
+                    android:maxLines="1"
+                    android:id="@+id/pArDescription"
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:id="@+id/interestCompany_layout"
+                >
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/vcompany"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="10dp"
+                    />
+                <android.support.v7.widget.AppCompatSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/pCompanies"
+                    android:backgroundTint="@color/company3"
+                    >
+
+                </android.support.v7.widget.AppCompatSpinner>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/vprice"
+                    android:drawablePadding="20dp"
+                    android:textColor="#FFF"
+                    android:textCursorDrawable="@null"
+                    android:hint="@string/price"
+                    android:inputType="number"
+                    android:textColorHint="#90A4AE"
+                    android:backgroundTint="#FFF"
+                    android:scrollHorizontally="true"
+                    android:maxLines="1"
+                    android:id="@+id/pPrice"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/vimage"
+                    android:drawablePadding="20dp"
+                    android:textColor="#FFF"
+                    android:textCursorDrawable="@null"
+                    android:hint="@string/productImage"
+                    android:textColorHint="#90A4AE"
+                    android:inputType="number"
+                    android:backgroundTint="#FFF"
+                    android:scrollHorizontally="true"
+                    android:maxLines="1"
+                    android:id="@+id/pProductImage"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_margin="10dp"
+                    android:text="@string/upload"
+                    android:textColor="#FFF"
+                    android:fontFamily="@font/gotham"
+                    android:background="@drawable/moredetails_effect"
+                    android:onClick="uploadProductImage"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:text="@string/addProduct"
+                    android:textColor="#FFF"
+                    android:id="@+id/addP"
+                    android:fontFamily="@font/gotham"
+                    android:background="@drawable/moredetails_effect"
+                    android:onClick="addProductButton"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.05"
+                ></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+</LinearLayout>
